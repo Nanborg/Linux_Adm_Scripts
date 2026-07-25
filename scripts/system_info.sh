@@ -1,5 +1,34 @@
 #!/bin/bash
 
+usage() {
+    echo "Usage: $0 [--json] [--help]"
+    echo
+    echo "Options:"
+    echo " --json Print output as JSON"
+    echo " --help Show this help message"
+}
+
+json=false
+
+case "$1" in
+    "")
+        ;;
+    --json)
+        json=true
+        ;;
+    --help|-h)
+        usage
+        exit 0
+        ;;
+    *)
+        echo "Error: unknown option: $1" >&2
+        usage
+        exit 1
+        ;;
+esac
+
+echo "json=$json"
+
 os=name="unknown"
 if [ -r /etc/os-release ]; then
     os_name=$(awk -F= '$1=="PRETTY_NAME" {gsub("\"", "", $2); print $2}' /etc/os-release)

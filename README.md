@@ -8,21 +8,21 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 
 ## Compétences
 
-- [ ] Navigation dans le terminal
-- [ ] Gestion des fichiers
+- [x] Navigation dans le terminal
+- [x] Gestion des fichiers
 - [ ] Permissions Linux
 - [ ] Utilisateurs et groupes
 - [ ] Processus
 - [ ] Journalisation (logs)
 - [ ] SSH
 - [ ] Réseau
-- [ ] Bash
+- [x] Bash
 
 ---
 
 ## Fonctionnalités
 
-- [ ] Afficher les informations système
+- [x] Afficher les informations système
 - [ ] Vérifier l'utilisation du disque
 - [ ] Vérifier l'utilisation de la mémoire
 - [ ] Vérifier la charge CPU

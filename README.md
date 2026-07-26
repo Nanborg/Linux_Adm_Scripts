@@ -12,7 +12,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Gestion des fichiers
 - [ ] Permissions Linux
 - [ ] Utilisateurs et groupes
-- [ ] Processus
+- [x] Processus
 - [ ] Journalisation (logs)
 - [ ] SSH
 - [ ] Réseau
@@ -26,7 +26,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [ ] Vérifier l'utilisation du disque
 - [ ] Vérifier l'utilisation de la mémoire
 - [ ] Vérifier la charge CPU
-- [ ] Lister les utilisateurs connectés
+- [x] Lister les utilisateurs connectés
 - [ ] Sauvegarder un dossier
 - [ ] Nettoyer les fichiers temporaires
 - [ ] Rechercher les fichiers volumineux

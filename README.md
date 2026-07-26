@@ -18,11 +18,9 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Codes de sortie
 - [x] Documentation de scripts
 - [x] Permissions Linux
-- [ ] Utilisateurs et groupes
+- [x] Utilisateurs et groupes
 - [x] Processus
-- [ ] Journalisation (logs)
-- [ ] SSH
-- [ ] Réseau
+- [x] Journalisation (logs)
 
 ---
 
@@ -33,11 +31,11 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Vérifier l'utilisation de la mémoire
 - [x] Vérifier la charge CPU
 - [x] Lister les utilisateurs connectés
-- [ ] Sauvegarder un dossier
+- [x] Sauvegarder un dossier
 - [x] Nettoyer les fichiers temporaires
 - [x] Rechercher les fichiers volumineux
 - [x] Vérifier les services actifs
-- [ ] Générer un rapport système
+- [x] Générer un rapport système
 
 ---
 
@@ -57,7 +55,6 @@ linux-admin-scripts/
 │   ├── large_files.sh
 │   └── report.sh
 ├── docs/
-├── screenshots/
 ├── LICENSE
 └── README.md
 ```
@@ -74,25 +71,25 @@ linux-admin-scripts/
 
 ## Objectifs d'apprentissage
 
-- [ ] Utiliser efficacement le terminal Linux
-- [ ] Écrire des scripts Bash simples
-- [ ] Comprendre l'administration de base d'un système Linux
-- [ ] Versionner un projet avec Git
+- [x] Utiliser efficacement le terminal Linux
+- [x] Écrire des scripts Bash simples
+- [x] Comprendre l'administration de base d'un système Linux
+- [x] Versionner un projet avec Git
 
 ---
 
 ## Progression
 
-**État du projet :** 🚧 En cours
+**État du projet :** ✅ Fait et validé
 
 | Élément | Statut |
 |---------|--------|
-| Dépôt GitHub | ⏳ |
-| README | ⏳ |
-| Structure du projet | ⏳ |
-| Scripts | ⏳ |
-| Documentation | ⏳ |
-| Tests | ⏳ |
+| Dépôt GitHub | ✅ Validé |
+| README | ✅ Validé |
+| Structure du projet | ✅ Validé |
+| Scripts | ✅ Validé |
+| Documentation | ✅ Validée |
+| Tests | ✅ Validés |
 
 ---
 

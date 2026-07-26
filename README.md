@@ -30,7 +30,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [ ] Sauvegarder un dossier
 - [ ] Nettoyer les fichiers temporaires
 - [ ] Rechercher les fichiers volumineux
-- [ ] Vérifier les services actifs
+- [x] Vérifier les services actifs
 - [ ] Générer un rapport système
 
 ---

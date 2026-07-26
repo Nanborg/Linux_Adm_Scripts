@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source_dir="$1"
+backup_dir="${2:-backups}"
 
 if [ -z "$source_dir" ]; then
     echo "Error: source directory is required" >&2
@@ -12,4 +13,8 @@ if [ ! -d "$source_dir" ]; then
     exit 1
 fi
 
-tar -czf backup.tar.gz "$source_dir"
+mkdir -p "$backup_dir"
+timestamp=$(date +"%Y%m%d_%H%M%S")
+base_name=$(basename "$source_dir")
+archive="$backup_dir/${base_name}_backup_$timestamp.tar.gz"
+tar -czf "$archive" "$source_dir"

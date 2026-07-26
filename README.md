@@ -17,7 +17,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Validation d'entrées utilisateur
 - [x] Codes de sortie
 - [x] Documentation de scripts
-- [ ] Permissions Linux
+- [x] Permissions Linux
 - [ ] Utilisateurs et groupes
 - [x] Processus
 - [ ] Journalisation (logs)
@@ -34,7 +34,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Vérifier la charge CPU
 - [x] Lister les utilisateurs connectés
 - [ ] Sauvegarder un dossier
-- [ ] Nettoyer les fichiers temporaires
+- [x] Nettoyer les fichiers temporaires
 - [x] Rechercher les fichiers volumineux
 - [x] Vérifier les services actifs
 - [ ] Générer un rapport système

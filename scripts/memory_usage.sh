@@ -9,6 +9,9 @@ read total used free_mem available <<EOF
 $(free -m | awk 'NR==2 {print $2, $3, $4, $7}')
 EOF
 
+used_percent=$((used * 100 / total))
+echo "Used:      ${used} MB (${used_percent}%)"
+
 echo "memory usage"
 echo "============"
 echo "Total:        ${total} MB"

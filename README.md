@@ -25,7 +25,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Afficher les informations système
 - [x] Vérifier l'utilisation du disque
 - [x] Vérifier l'utilisation de la mémoire
-- [ ] Vérifier la charge CPU
+- [x] Vérifier la charge CPU
 - [x] Lister les utilisateurs connectés
 - [ ] Sauvegarder un dossier
 - [ ] Nettoyer les fichiers temporaires

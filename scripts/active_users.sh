@@ -4,9 +4,9 @@ usage() {
     echo "Usage: $0 [--summary] [--history] [--help]"
     echo
     echo "Options:"
-    echo " --summary Show only active sessions"
-    echo " --history Show recent login history"
-    echo " --help"
+    echo " --summary    Show only active sessions"
+    echo " --history    Show recent login history"
+    echo " --help       Show this help message"
 }
 
 require_cmd() {
@@ -33,7 +33,7 @@ case "$1" in
         exit 0
         ;;
     *)
-        echo "Error: unknown option: $1 >&2
+        echo "Error: unknown option: $1" >&2
         usage
         exit 1
         ;;
@@ -46,7 +46,7 @@ sessions=$(who)
 session_count=$(printf "%s\n" "$sessions" | sed '/^$/d' | wc -l)
 
 echo "Active users"
-echo "==============="
+echo "============"
 echo "Session count: $session_count"
 echo
 
@@ -58,9 +58,9 @@ else
 fi
 
 if [ "$mode" = "default" ] && [ "$session_count" -gt 0 ]; then
-  echo
-    echo  "Detailed activity"
-    echo "=================="
+    echo
+    echo "Detailed activity"
+    echo "================="
     w
 fi
 

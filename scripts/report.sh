@@ -12,3 +12,10 @@ df -h /
 echo
 echo "Memory:"
 free -h
+echo
+echo "CPU:"
+echo "Cores: $(nproc)"
+echo "Load: $(awk '{print $1, $2, $3}' /proc/loadavg)"
+echo
+echo "Connected users:"
+who

@@ -10,13 +10,19 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 
 - [x] Navigation dans le terminal
 - [x] Gestion des fichiers
+- [x] Lecture des informations système
+- [x] Utilisation de commandes Unix
+- [x] Parsing de sorties avec awk
+- [x] Gestion des arguments Bash
+- [x] Validation d'entrées utilisateur
+- [x] Codes de sortie
+- [x] Documentation de scripts
 - [ ] Permissions Linux
 - [ ] Utilisateurs et groupes
 - [x] Processus
 - [ ] Journalisation (logs)
 - [ ] SSH
 - [ ] Réseau
-- [x] Bash
 
 ---
 
@@ -29,7 +35,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 - [x] Lister les utilisateurs connectés
 - [ ] Sauvegarder un dossier
 - [ ] Nettoyer les fichiers temporaires
-- [ ] Rechercher les fichiers volumineux
+- [x] Rechercher les fichiers volumineux
 - [x] Vérifier les services actifs
 - [ ] Générer un rapport système
 

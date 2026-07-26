@@ -2,6 +2,7 @@
 
 target="${1:-/tmp}"
 days="${2:-7}"
+mode="${3:-dry-run}"
 
 if [ ! -d "$target" ]; then
     echo "Error: directory does not exist: $target" >&2
@@ -15,6 +16,17 @@ case "$days" in
         ;;
 esac
 
-echo "Cleanup dry-run"
-echo "==============="
-find "$target" -type f -mtime +"$days" -print
+echo "Cleanup"
+echo "======="
+echo "Target: $target"
+echo "Older than: $days days"
+echo "Mode: $mode"
+echo
+
+if [ "$mode" = "--delete" ]; then
+    find "$target" -type f -mtime +"$days" -print -delete
+else
+    find "$target" -type f -mtime +"$days" -print
+    echo
+    echo "Dry-run only. Add --delete to remove files."
+fi

@@ -21,4 +21,13 @@ generate_report() {
     echo "Connected users:"
     who
 }
-generate_report
+
+
+
+report_dir="reports"
+
+report="$report_dir/system_report_$timestamp.txt"
+
+mkdir -p "$report_dir"
+generate_report > "$report"
+echo "Report created: $report"

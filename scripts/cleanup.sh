@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target="/tmp"
+target="${1:-/tmp}"
 days=7
 
 echo "Cleanup dry-run"

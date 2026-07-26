@@ -1,6 +1,22 @@
 #!/bin/bash
 
+usage() {
+    echo "Usage: $0 [threshold_percent]"
+    echo "Example: $0 80"
+}
+
 threshold="${1:-80}"
+
+case "$threshold" in
+    --help|-h)
+        usage
+        exit 0
+        ;;
+    ''|*[!0-9]*)
+        echo "Error: threshold must be a number" >&2
+        exit 1
+        ;;
+esac
 
 if ! command -v free >/dev/null 2>&1; then
     echo "Error: free command not found" >&2

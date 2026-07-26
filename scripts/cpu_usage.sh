@@ -1,7 +1,11 @@
 #!/bin/bash
 
+cores=$(nproc)
+load_all=$(awk '{print $1, $2, $3}' /proc/loadavg)
+
 echo "CPU usage"
 echo "========="
-echo "CPU cores: $(nproc)"
+echo "CPU cores: $cores"
 echo "Load average:"
-uptime
+echo
+echo "Load average 1/5/15 min: $load_all"

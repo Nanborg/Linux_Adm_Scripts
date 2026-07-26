@@ -23,7 +23,7 @@ Mettre en pratique les bases de l'administration Linux en développant plusieurs
 ## Fonctionnalités
 
 - [x] Afficher les informations système
-- [ ] Vérifier l'utilisation du disque
+- [x] Vérifier l'utilisation du disque
 - [x] Vérifier l'utilisation de la mémoire
 - [ ] Vérifier la charge CPU
 - [x] Lister les utilisateurs connectés

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 path="${1:-/}"
+threshold="${2:-80}"
 
 if [ ! -e "$path" ]; then
     echo "Error: path does not exist: $path" >&2
@@ -13,4 +14,10 @@ echo "Disk usage"
 echo "=========="
 df -h "$path"
 echo
-echo "Usage: ${usage_percent}%"
+
+if [ "$usage_percent" -ge "$threshold" ]; then
+    echo "Status: WARNING, usage is ${usage_percent}% (threshold: ${threshold}%)"
+    exit 2
+fi
+
+echo "Status: OK, usage is ${usage_percent}% (threshold: ${threshold}%)"

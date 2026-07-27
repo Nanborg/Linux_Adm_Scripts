@@ -51,7 +51,7 @@ if [ "$output" = "stdout" ]; then
 fi
 
 report_dir="reports"
-
+timestamp=$(date +"%Y%m%d_%H%M%S")
 report="$report_dir/system_report_$timestamp.txt"
 
 mkdir -p "$report_dir"
